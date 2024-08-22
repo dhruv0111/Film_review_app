@@ -1,0 +1,102 @@
+body {
+  color: white;
+  background-color: #05121c;
+  margin: auto;
+  margin-top: 10px;
+  max-width: 90%;
+}
+
+a:link, a:visited {
+  color: #8bb4f7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8bb4f7;
+  text-decoration: underline;
+}
+
+a.negative:link, a.negative:visited {
+  color: #f73441;
+}
+
+a.positive:link, a.positive:visited {
+  color: #4bf734;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.menu {
+  width: 300px;
+}
+
+.secondary, a.secondary {
+  color: #437175;
+}
+
+hr.divider {
+  border: 1px solid #0d2b42;
+}
+
+.container {
+  border: 2px solid #0b273d;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.detail {
+  color: #5988d3;
+  font-weight: bold;
+}
+
+.grade {
+  font-size: 150%;
+}
+
+#not-graded {
+  color: gray;
+}
+
+#bad {
+  color: red;
+}
+
+#neutral {
+  color: orange;
+}
+
+#good {
+  color: green;
+}
+
+#perfect {
+  color: darkgreen;
+}
+
+.average-grade {
+  display: inline-block;
+  padding: 10px;
+}
+
+.film-details {
+  display: inline-block;
+  padding: 10px;
+  width: 90%;
+}
+
+.footer, a.footer {
+  color: #103f64;
+}
+
+table, th, td {
+  border: 1px solid #103f64;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  padding: 10px;
+}

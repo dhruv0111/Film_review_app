@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="/static/main.css">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>FRA - {% block title %}{% endblock %}</title>
+<p><a href="/">Front page</a> | <a href="/statistics">Statistics</a> |
+{% if session.user_id %}Logged in as <b>{{ session["username"] }}</b>
+<a href="/logout" class="secondary">(Log out)</a>
+{% else %}
+<a href="/login">Log in</a> or <a href="/register">Register</a>
+{% endif %}</p>
+
+<hr class="divider">
+<body>
+{% block content %}{% endblock %}
+</body>
+
+<hr class="divider">
+<p class="footer">Film review app | <a class="footer" href="https://github.com/rikurauhala/">Riku Rauhala</a> |
+                  2021 | <a class="footer" href="https://github.com/rikurauhala/film-review-app">Source code</a></p>
+</html>

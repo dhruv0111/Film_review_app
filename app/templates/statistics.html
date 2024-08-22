@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+{% block title %}Statistics{% endblock %}
+{% block content %}
+
+<h3>Statistics</h3>
+
+<table>
+    <tr>
+        <td>Registered users</td>
+        <td>{{ users }}</td>
+    </tr>
+    <tr>
+        <td>Administrators</td>
+        <td>{{ admins }}</td>
+    </tr>
+    <tr>
+        <td>Banned users</td>
+        <td>{{ banned }}</td>
+    </tr>
+    <tr>
+        <td>Most active user</td>
+        <td>{{ most_active }}</td>
+    </tr>
+    <tr>
+        <td>Oldest user</td>
+        <td>{{ oldest }}</td>
+    </tr>
+    <tr>
+        <td>Newest user</td>
+        <td>{{ newest }}</td>
+    </tr>
+    <tr>
+        <td>Last one to log in</td>
+        <td>{{ last_to_login }}</td>
+    </tr>
+    <tr>
+        <td>Films</td>
+        <td>{{ films }}</td>
+    </tr>
+    <tr>
+        <td>Reviews</td>
+        <td>{{ reviews }}</td>
+    </tr>
+    <tr>
+        <td>Highest rated film</td>
+        <td>{{ highest }}</td>
+    </tr>
+    <tr>
+        <td>Lowest rated film</td>
+        <td>{{ lowest }}</td>
+    </tr>
+    <tr>
+        <td>Average grade</td>
+        <td>{{ average }}</td>
+    </tr>
+    <tr>
+        <td>Countries</td>
+        <td>{{ countries }}</td>
+    </tr>
+    <tr>
+        <td>Languages</td>
+        <td>{{ languages }}</td>
+    </tr>
+    <tr>
+        <td>Genres</td>
+        <td>{{ genres }}</td>
+    </tr>
+    <tr>
+        <td>Directors</td>
+        <td>{{ directors }}</td>
+    </tr>
+    <tr>
+        <td>Screenwriters</td>
+        <td>{{ screenwriters }}</td>
+    </tr>
+</table>
+
+{% endblock %}
